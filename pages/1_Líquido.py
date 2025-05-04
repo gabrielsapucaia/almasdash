@@ -80,7 +80,7 @@ df_filtrado["MediaMovel"] = df_filtrado.groupby("Fonte")["Valor"].transform(
 )
 
 # === Ordem lógica dos gráficos ===
-ordem_manual = ["TQ01_Au_L", "TQ07_Au_L", "TQ06_Au_L", "LIX_Au_L", "REJ_Au_L", "TQ02_Au_L", "BAR_Au_L"]
+ordem_manual = fontes_l
 fontes_sel = sorted(fontes_sel, key=lambda f: ordem_manual.index(f) if f in ordem_manual else len(ordem_manual))
 
 # === Exibição ===
