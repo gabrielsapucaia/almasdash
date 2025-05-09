@@ -23,7 +23,8 @@ if novo_hash and novo_hash != hash_antigo:
 
 # === Dados e filtro fixo ===
 df = carregar_dados()
-fontes_l = ["BAR_Au_L", "LIX_Au_L", "TQ1_Au_L", "TQ2_Au_L", "TQ6_Au_L", "TQ7_Au_L", "REJ_Au_L"]
+fontes_l = ["BAR_Au_L", "BAR_CN", "LIX_Au_L", "LIX_Cu_L", "LIX_Fe_L", "TQ1_Au_L", "TQ1_Cu_L", "TQ1_Fe_L", 
+            "TQ2_Au_L", "TQ6_Au_L", "TQ6_Cu_L", "TQ6_Fe_L", "TQ7_Au_L", "REJ_Au_L", "REJ_Cu_L", "REJ_Fe_L"]
 df = df[df["Fonte"].isin(fontes_l)]
 
 if df.empty:
