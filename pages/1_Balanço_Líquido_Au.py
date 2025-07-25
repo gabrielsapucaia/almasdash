@@ -58,7 +58,7 @@ periodo = st.sidebar.date_input(
     max_value=data_max.date(),
     key="periodo"
 )
-periodo_movel = st.sidebar.slider("Média Móvel (períodos):", 1, 20, value=st.session_state["periodo_movel"], key="periodo_movel")
+periodo_movel = st.sidebar.slider("Média Móvel (períodos):", 1, 50, value=st.session_state["periodo_movel"], key="periodo_movel")
 grafico_unico = st.sidebar.checkbox("Exibir em gráfico único", value=st.session_state["grafico_unico"], key="grafico_unico")
 
 inicio, fim = periodo if isinstance(periodo, (list, tuple)) and len(periodo) == 2 else (periodo, data_max.date())
